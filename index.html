@@ -3,43 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./swiper.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body class="body">
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo">
-          <img src="./img/logo.png" alt="logo" />
-        </div>
-        <button class="button__lang">en</button>
-        <div class="header__container">
-          <menu class="header__menu">
-            <ul class="header__links">
-              <button class="header__button_close"></button>
-              <li class="header__link">
-                <a href="#p1" class="header__link-type">Services</a>
-              </li>
-              <li class="header__link">
-                <a href="#p2" class="header__link-type">Cases</a>
-              </li>
-              <li class="header__link">
-                <a href="#p3" class="header__link-type">Technology</a>
-              </li>
-              <li class="header__link">
-                <a href="#p4" class="header__link-type">About</a>
-              </li>
-              <li class="header__link">
-                <a href="#p5" class="header__link-type">Contacts</a>
-              </li>
-            </ul>
-            <button class="header__button">
-
-            </button>
-          </menu>
-        </div>
-      </div>
-    </header>
     <section class="akadev">
+      <header class="header">
+        <div class="header__content">
+          <div class="header__logo">
+            <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+          </div>
+          <button class="button__lang">en</button>
+          <div class="header__container">
+            <nav class="header__menu">
+              <ul class="header__links">
+                <button class="header__button_close"></button>
+                <li class="header__link">
+                  <a href="#p1" class="header__link-type">Services</a>
+                </li>
+                <li class="header__link">
+                  <a href="#p2" class="header__link-type">Cases</a>
+                </li>
+                <li class="header__link">
+                  <a href="#p3" class="header__link-type">Technology</a>
+                </li>
+                <li class="header__link">
+                  <a href="#p4" class="header__link-type">About</a>
+                </li>
+                <li class="header__link">
+                  <a href="#p5" class="header__link-type">Contacts</a>
+                </li>
+              </ul>
+              <button class="header__button"></button>
+            </nav>
+          </div>
+        </div>
+      </header>
       <div class="akadev__block">
         <h1 class="akadev__title">
           Welcome to AKADEV.team,<br />
@@ -58,7 +57,7 @@
       </div>
     </section>
     <section class="service" id="p1">
-      <div class="service__content">
+      <div class="container">
         <h2 class="service__title">Service</h2>
         <div class="service__grid">
           <div class="service__block">
@@ -173,32 +172,82 @@
       </div>
     </section>
     <section class="cases" id="p2">
-      <div class="cases__content">
+      <div class="container">
         <h2 class="cases__title">Cases</h2>
         <div class="cases__container">
           <div class="cases__block">
             <img src="./img/notebook.png" alt="notebook" class="cases__img" />
           </div>
           <div class="cases__block">
-            <div class="cases__block-links">
-              <a href="#" class="cases__block-link">Web Development</a>
-              <a href="#" class="cases__block-link">Mobile App Development</a>
+            <div class="cases__swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="cases__block-links">
+                    <a href="#" class="cases__block-link">Web Development</a>
+                    <a href="#" class="cases__block-link"
+                      >Mobile App Development</a
+                    >
+                  </div>
+                  <h2 class="cases__subtitle">Redaptive</h2>
+                  <p class="cases__text">
+                    Full-cycle Development is a pivotal advantage that we offer
+                    to our B2B clients. This approach is of paramount importance
+                    as it provides a comprehensive solution for all the needs of
+                    your project, starting from the initial idea and extending
+                    to post-launch support.
+                  </p>
+                  <a href="#" class="cases__link-button">See project</a>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases__block-links">
+                    <a href="#" class="cases__block-link">Web Development</a>
+                    <a href="#" class="cases__block-link"
+                      >Mobile App Development</a
+                    >
+                  </div>
+                  <h2 class="cases__subtitle">Redaptive</h2>
+                  <p class="cases__text">
+                    Full-cycle Development is a pivotal advantage that we offer
+                    to our B2B clients. This approach is of paramount importance
+                    as it provides a comprehensive solution for all the needs of
+                    your project, starting from the initial idea and extending
+                    to post-launch support.
+                  </p>
+                  <a href="#" class="cases__link-button">See project</a>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases__block-links">
+                    <a href="#" class="cases__block-link">Web Development</a>
+                    <a href="#" class="cases__block-link"
+                      >Mobile App Development</a
+                    >
+                  </div>
+                  <h2 class="cases__subtitle">Redaptive</h2>
+                  <p class="cases__text">
+                    Full-cycle Development is a pivotal advantage that we offer
+                    to our B2B clients. This approach is of paramount importance
+                    as it provides a comprehensive solution for all the needs of
+                    your project, starting from the initial idea and extending
+                    to post-launch support.
+                  </p>
+                  <a href="#" class="cases__link-button">See project</a>
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
             </div>
-            <h2 class="cases__subtitle">Redaptive</h2>
-            <p class="cases__text">
-              Full-cycle Development is a pivotal advantage that we offer to our
-              B2B clients. This approach is of paramount importance as it
-              provides a comprehensive solution for all the needs of your
-              project, starting from the initial idea and extending to
-              post-launch support.
-            </p>
-            <a href="#" class="cases__link-button">See project</a>
+            <div class="cases__nav">
+              <div class="cases-button-prev">&larr;</div>
+              <div class="cases-pagination"></div>
+              <div class="cases-button-next">&rarr;</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="development">
-      <div class="development__content">
+      <div class="container">
         <img
           src="./img/development_cycle.png"
           alt="cycle"
@@ -223,59 +272,96 @@
               receive a product they deserve and have dreamt of.
             </p>
           </div>
+          <!-- Slider main container -->
           <div class="development__block">
-            <p class="development__text">
-              Full-cycle Development is a pivotal advantage that we offer to our
-              B2B clients. This approach is of paramount importance as it
-              provides a comprehensive solution for all the needs of your
-              project, starting from the initial idea and extending to
-              post-launch support. <br />
-              <br />By choosing AKADEV.team for full-cycle development, you gain
-              an integrated, reliable, and results-driven partner ready to bring
-              your ambitious ideas to life and ensure their success. We
-              meticulously care about every detail, ensuring that your clients
-              receive a product they deserve and have dreamt of.
+            <p class="development__text-swiper">
+              When you opt for full-cycle development , you benefit from:
             </p>
+            <div class="development__swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="development-wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="development__text swiper-slide">
+                  <b>Integrated Approach</b><br /><br />
+                  We seamlessly integrate all stages of development to ensure
+                  that every aspect of your project harmoniously interacts. This
+                  helps avoid issues associated with disparate solutions from
+                  different vendors.
+                </div>
+                <div class="development__text swiper-slide">
+                  <b>Integrated Approach</b><br /><br />
+                  We seamlessly integrate all stages of development to ensure
+                  that every aspect of your project harmoniously interacts. This
+                  helps avoid issues associated with disparate solutions from
+                  different vendors.
+                </div>
+                <div class="development__text swiper-slide">
+                  <b>Integrated Approach</b><br /><br />
+                  We seamlessly integrate all stages of development to ensure
+                  that every aspect of your project harmoniously interacts. This
+                  helps avoid issues associated with disparate solutions from
+                  different vendors.
+                </div>
+                <div class="development__text swiper-slide">
+                  <b>Integrated Approach</b><br /><br />
+                  We seamlessly integrate all stages of development to ensure
+                  that every aspect of your project harmoniously interacts. This
+                  helps avoid issues associated with disparate solutions from
+                  different vendors.
+                </div>
+                <div class="development__text swiper-slide">
+                  <b>Integrated Approach</b><br /><br />
+                  We seamlessly integrate all stages of development to ensure
+                  that every aspect of your project harmoniously interacts. This
+                  helps avoid issues associated with disparate solutions from
+                  different vendors.
+                </div>
+              </div>
+              <!-- If we need pagination -->
+            </div>
+            <div class="development-pagination"></div>
           </div>
         </div>
       </div>
     </section>
     <section class="choose" id="p4">
-      <h2 class="choose__title">Why Choose AKAdev</h2>
-      <p class="choose__text">
-        By choosing AKADEV.team, you gain access to experts, a commitment to
-        quality, transparency, and a unique approach to each project.
-      </p>
-      <div class="choose__container">
-        <div class="choose__container-block">
-          <p class="choose__container-text-1">10</p>
-          <p class="choose__container-text-2">
-            with over 10 years<br />
-            of experience
-          </p>
+      <div class="container">
+        <h2 class="choose__title">Why Choose AKADEV</h2>
+        <p class="choose__text">
+          By choosing AKADEV.team, you gain access to experts, a commitment to
+          quality, transparency, and a unique approach to each project.
+        </p>
+        <div class="choose__container">
+          <div class="choose__container-block">
+            <p class="choose__container-text-1 count">0</p>
+            <p class="choose__container-text-2">
+              with over 10 years<br />
+              of experience
+            </p>
+          </div>
+          <div class="choose__container-block">
+            <p class="choose__container-text-1 count">0</p>
+            <p class="choose__container-text-2">
+              a presence in<br />
+              15 countries
+            </p>
+          </div>
+          <div class="choose__container-block">
+            <p class="choose__container-text-1 count">0</p>
+            <p class="choose__container-text-2">
+              130 successful<br />
+              projects
+            </p>
+          </div>
         </div>
-        <div class="choose__container-block">
-          <p class="choose__container-text-1">30</p>
-          <p class="choose__container-text-2">
-            a presence in<br />
-            15 countries
-          </p>
-        </div>
-        <div class="choose__container-block">
-          <p class="choose__container-text-1">130</p>
-          <p class="choose__container-text-2">
-            130 successful<br />
-            projects
-          </p>
-        </div>
+        <p class="choose__text">
+          We operate on a global scale, providing full-cycle development and
+          innovation.
+        </p>
       </div>
-      <p class="choose__text">
-        We operate on a global scale, providing full-cycle development and
-        innovation.
-      </p>
     </section>
     <section class="technology" id="p3">
-      <div class="technology__content">
+      <div class="container">
         <h2 class="technology__title">Technology</h2>
         <p class="technology__text">
           We keep pace with the latest technological trends and utilize
@@ -556,118 +642,121 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
     <section class="contact" id="p5">
-      <div class="contact__content">
-
-      <h2 class="contact__title">Contact us</h2>
-        <form class="contact__form" name="new-application">
-          <div class="contact__form-block">
-            <input
-              class="contact__input"
-              type="text"
-              name="name"
-              placeholder="Name"
-              minlength="2"
-              maxlength="30"
-              required
-            />
-            <input
-              class="contact__input"
-              type="text"
-              name="mail"
-              placeholder="E-mail"
-              minlength="2"
-              maxlength="30"
-              required
-            />
-          </div>
-          <div class="contact__form-block">
-            <input
-              class="contact__input"
-              type="text"
-              name="company"
-              placeholder="Company"
-              minlength="2"
-              maxlength="30"
-              required
-            />
-            <input
-              class="contact__input"
-              type="text"
-              name="country"
-              placeholder="Country"
-              minlength="2"
-              maxlength="30"
-              required
-            />
-          </div>
-          <input
-            class="contact__input"
-            type="text"
-            name="about"
-            placeholder="About your project "
-            minlength="2"
-            maxlength="30"
-            required
-          />
-          <div class="contact__form_button">
-            <button class="contact__button" type="submit">Send</button>
-            <div class="checkbox">
+      <div class="container">
+        <div class="contact__content">
+          <h2 class="contact__title">Contact us</h2>
+          <form class="contact__form" name="new-application">
+            <div class="contact__form-block">
               <input
-                class="custom-checkbox"
-                type="checkbox"
-                id="check"
-                name="check"
-                value="check"
+                class="contact__input"
+                type="text"
+                name="name"
+                placeholder="Name"
+                minlength="2"
+                maxlength="30"
+                required
               />
-              <label for="check">
-                <p class="contact__text">
-                  By using this form you agree with the storage and handling
-                  of your data by this website in accordance with our
-                  <a
-                    class="contact__link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="#"
-                    >Privacy Policy</a
-                  >
-                </p></label
-              >
+              <input
+                class="contact__input"
+                type="text"
+                name="mail"
+                placeholder="E-mail"
+                minlength="2"
+                maxlength="30"
+                required
+              />
             </div>
-          </div>
-        </form>
+            <div class="contact__form-block">
+              <input
+                class="contact__input"
+                type="text"
+                name="company"
+                placeholder="Company"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+              <input
+                class="contact__input"
+                type="text"
+                name="country"
+                placeholder="Country"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+            </div>
+            <input
+              class="contact__input"
+              type="text"
+              name="about"
+              placeholder="About your project "
+              minlength="2"
+              maxlength="30"
+              required
+            />
+            <div class="contact__form_button">
+              <button class="contact__button" type="submit">Send</button>
+              <div class="checkbox">
+                <input
+                  class="custom-checkbox"
+                  type="checkbox"
+                  id="check"
+                  name="check"
+                  value="check"
+                />
+                <label for="check">
+                  <p class="contact__text">
+                    By using this form you agree with the storage and handling
+                    of your data by this website in accordance with our
+                    <a
+                      class="contact__link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="#"
+                      >Privacy Policy</a
+                    >
+                  </p></label
+                >
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
     <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__block">
-          <p class="footer__block-text_bold">Italian Office</p>
-          <p class="footer__block-text_normal">
-            Via Acquasanta, 1,<br />
-            San Marcello (An)
-          </p>
-        </div>
-        <div class="footer__block-pic">
-          <img src="./img/logo.png" alt="logo" />
-          <div class="footer__block-social">
-            <img src="./img/skype.png" alt="skype" />
-            <img src="./img/be.png" alt="be" />
-            <img src="./img/f.png" alt="" />
-            <img src="./img/in.png" alt="" />
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__block">
+            <p class="footer__block-text_bold">Italian Office</p>
+            <p class="footer__block-text_normal">
+              Via Acquasanta, 1,<br />
+              San Marcello (An)
+            </p>
           </div>
-        </div>
-        <div class="footer__block">
-          <p class="footer__block-text_bold">US Office</p>
-          <p class="footer__block-text_normal">
-            1530 Newport, San Luis Obispo,<br />
-            CA, United States
-          </p>
+          <div class="footer__block-pic">
+            <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+            <div class="footer__block-social">
+              <img src="./img/skype.png" alt="skype" />
+              <img src="./img/be.png" alt="be" />
+              <img src="./img/f.png" alt="" />
+              <img src="./img/in.png" alt="" />
+            </div>
+          </div>
+          <div class="footer__block">
+            <p class="footer__block-text_bold">US Office</p>
+            <p class="footer__block-text_normal">
+              1530 Newport, San Luis Obispo,<br />
+              CA, United States
+            </p>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
